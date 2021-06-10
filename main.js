@@ -48,3 +48,40 @@ right();
 console.log("right");
           }    
 }
+
+
+function up() {
+if(rover_y >=0) {
+rover_y -= 10;
+console.log("When up arrow is pressed = " + rover_x + " _ " +rover_y);
+uploadBackground();
+uploadrover();
+   }
+}
+
+function down() {
+if(rover_y <= 500) {
+rover_y += 10;
+console.log("When down arrow is pressed, x = " + rover_x + " | y = " +rover_y);
+uploadBackground();
+uploadrover();
+    }
+}
+
+function left() {
+if(rover_x >= 0) {
+rover_x -= 10;
+console.log("When left arrow is pressed, x = " + rover_x + " | y = " +rover_y);
+uploadBackground();
+uploadrover();
+    }
+}
+
+function right() {
+if(rover_x <= 750) {
+rover_x += 10;
+console.log("When right arrow is pressed, x = " + rover_x + " | y = " +rover_y);
+uploadBackground();
+uploadrover();
+    }
+}
